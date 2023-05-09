@@ -10,20 +10,20 @@ export default function Profile() {
           <h4>Profile</h4>
           <div className="dogumTarihi">
             <div className="solBolum">
-              <p>Doğum Tarihi</p>
-              <p>İkamet Şehri</p>
-              <p>Eğitim Durumu</p>
+              <p>Date of birth</p>
+              <p>City of residence</p>
+              <p>Educational status</p>
               <br />
               <br />
-              <p>Tercih Ettiği Rol</p>
+              <p>Preferred role</p>
             </div>
             <div className="sagBolum">
               <p>14.02.1995</p>
               <p>İstanbul</p>
               <p>
-                Erciyes Ünv. ETM
+                Erciyes Unv. ETM
                 <br />
-                Lisans, 2020
+                Licence, 2020
                 <br />
                 <br />
               </p>
@@ -34,11 +34,18 @@ export default function Profile() {
         <div className="aboutMe">
           <h4>About Me</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            aut, odit laborum aliquam voluptatum nisi mollitia.
-            <br />
-            <br /> Mnima accusamus ratione soluta aperiam sit voluptate? Dicta
-            quod deserunt quam temporibus cumque magnam!
+            I studied Industrial Design Engineering at Erciyes University. I
+            have developed myself in research, self-motivation, entrepreneurship
+            and acquiring different skills during my education. That's why I
+            think I will adapt easily to team. I completed my internship in the
+            department of automotive at Teknokaucuk AS. I have been in Portugal
+            for 6 months with Erasmus project. <br /> <br /> I have enrolled in
+            a 6-month intensive and accelerated full stack web development
+            online school with{" "}
+            <span style={{ color: "#4731d3" }}>Workintech</span> , where I learn
+            and implement real-life software projects within team environments.
+            Through this program, I have gained proficiency in various
+            technologies and actively participated in project development.
           </p>
         </div>
       </div>

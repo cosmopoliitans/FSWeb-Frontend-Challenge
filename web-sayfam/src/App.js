@@ -13,9 +13,12 @@ function App() {
       <ModeSwitch />
       <Header />
       <Bio />
+      <div id="skills"></div>
       <Skills />
       <Profile />
+      <div id="projects"></div>
       <Projects />
+      <div id="footer"></div>
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -6,9 +7,15 @@ export default function Header() {
       <p className="logo">E</p>
 
       <nav className="headerNav">
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Hire me</a>
+        <Link to="skills" smooth={true} duration={1000}>
+          Skills
+        </Link>
+        <Link to="projects" smooth={true} duration={2000}>
+          Projects
+        </Link>
+        <Link to="footer" smooth={true} duration={2000}>
+          Contact Me
+        </Link>
       </nav>
     </div>
   );

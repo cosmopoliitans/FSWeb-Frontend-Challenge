@@ -1,18 +1,14 @@
 /* ----------ModeSwitch---------*/
 
 .modeSwitch {
-  padding-left: 10rem;
-  padding-right: 10rem;
-  max-width: 90%;
-  height: 3rem;
-  top: 1.5rem;
-
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   justify-content: right;
 }
+
 .modeText {
   font-family: "Inter";
   font-style: normal;
@@ -37,6 +33,56 @@
 
 .toggle-switch-checkbox {
   display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 3px;
+  bottom: 0;
+  background-color: #4731d3;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffe86e;
+  transition: 0.6s;
+  border-radius: 50%;
+}
+.slider:after {
+  /* Added new code */
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffe86e;
+  transition: 0.6s;
+  border-radius: 50%;
+  transform: translateX(0px) translateY(-2px);
+}
+
+.toggle-switch-checkbox:checked + .slider {
+  background-color: #3a3a3a;
+}
+
+.toggle-switch-checkbox:checked + .slider:before {
+  transform: translateX(26px); /* transform değeri değiştirildi */
+}
+
+.toggle-switch-checkbox:checked + .slider:after {
+  transform: translateX(22px) translateY(-2px);
+  background-color: #3a3a3a;
 }
 
 .slider {
@@ -118,6 +164,16 @@
   color: #6b7280;
   text-decoration: none;
   padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+.headerNav a:last-child {
+  /* Default/white */
+
+  background: #ffffff;
+  /* Default/indigo/800 */
+
+  border: 1px solid #3730a3;
+  border-radius: 6px;
 }
 
 .headerNav a:hover {
@@ -196,6 +252,12 @@
   padding: 0px;
   gap: 2rem;
 }
+.button-1 p:first-child {
+  background: #3730a3;
+  border-radius: 6px;
+
+  color: #ffffff;
+}
 .button-1 p {
   background: #ffffff;
   /* Default/indigo/800 */
@@ -203,6 +265,7 @@
   height: 3rem;
   border: 1px solid #3730a3;
   border-radius: 6px;
+  cursor: pointer;
 }
 .button-1 p,
 .button-2 {
@@ -237,6 +300,7 @@ a {
 }
 .button-1 p:hover {
   background: #eeebff;
+  color: #3730a3;
 }
 .button-2:hover {
   background: #eeebff;
@@ -267,11 +331,12 @@ a {
 
 .skillsList {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .skillsListGroup {
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -454,7 +519,7 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0px;
-  gap: 7.5rem;
+  gap: 3rem;
 }
 
 .projects-list img {
@@ -505,7 +570,7 @@ a {
 
 .techStack p {
   box-sizing: border-box;
-
+  font-size: 13px;
   /* Auto layout */
   color: #3730a3;
   display: flex;
@@ -515,7 +580,7 @@ a {
   padding: 6px 18px 7px;
   gap: 10px;
 
-  width: 68px;
+  width: 90px;
   height: 27px;
 
   background: #ffffff;
@@ -575,6 +640,7 @@ a {
 .rectangle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .email {
@@ -639,4 +705,80 @@ a {
   letter-spacing: 0.01em;
 
   color: #0077b5;
+}
+
+/* dark mode */
+
+body.dark-mode {
+  background-color: #252128;
+  color: #ffffff;
+}
+
+.footer.dark-mode {
+  background-color: #141414;
+  color: #aebccf;
+}
+.modeText.dark-mode {
+  color: #d9d9d9;
+}
+.lang.dark-mode {
+  color: #bab2e7;
+}
+.footer.dark-mode h3 {
+  color: #aebccf;
+}
+.emailcss.dark-mode {
+  color: #bab2e7;
+}
+.sagF1.dark-mode {
+  color: #bab2e7;
+}
+.logo.dark-mode {
+  color: #8f88ff;
+  background-color: #4731d3;
+}
+.line.dark-mode {
+  border-top: 1px solid #6b7280;
+}
+.isim.dark-mode p {
+  color: #6b7280;
+}
+.headerNav.dark-mode a:last-child {
+  background: #ffffff;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+}
+
+.heroLeft.dark-mode h2 {
+  color: #aebccf;
+}
+.skills.dark-mode h3 {
+  color: #aebccf;
+}
+.skills.dark-mode h4 {
+  color: #aebccf;
+}
+.profileLine.dark-mode {
+  border-top: 1px solid #6b7280;
+}
+.profile.dark-mode h3 {
+  color: #aebccf;
+}
+.profile.dark-mode h4 {
+  color: #aebccf;
+}
+.profile.dark-mode p {
+  color: #aebccf;
+}
+.projects.dark-mode h3 {
+  color: #aebccf;
+}
+.projects.dark-mode h4 {
+  color: #aebccf;
+}
+.projects.dark-mode p {
+  color: #aebccf;
+}
+.projects.dark-mode .profileLine {
+  border-top: 1px solid #6b7280;
 }
