@@ -1,8 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-export default function ModeSwitch() {
-  const [darkMode, setDarkMode] = useState(false);
+export default function ModeSwitch({ handleLanguageChange, language }) {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
 
   useEffect(() => {
     const body = document.body;
@@ -15,8 +17,8 @@ export default function ModeSwitch() {
     lang.classList.toggle("dark-mode", darkMode);
     const emailcss = document.querySelector(".emailcss");
     emailcss.classList.toggle("dark-mode", darkMode);
-    const sagF1 = document.querySelector(".sagF1");
-    sagF1.classList.toggle("dark-mode", darkMode);
+    // const sagF1 = document.querySelector(".sagF1");
+    // sagF1.classList.toggle("dark-mode", darkMode);
     const logo = document.querySelector(".logo");
     logo.classList.toggle("dark-mode", darkMode);
     const isim = document.querySelector(".isim");
@@ -55,9 +57,20 @@ export default function ModeSwitch() {
         </label>
         <div className="modeText">{darkMode ? "LIGHT MODE" : "DARK MODE"}</div>
         <div className="modeText">|</div>
-        <div className="modeText">
-          <span className="lang">TÜRKÇE</span>'YE GEÇ
-        </div>
+        {language === "en" ? (
+          <div className="modeText">
+            <span className="lang" onClick={handleLanguageChange}>
+              TÜRKÇE
+            </span>
+            'YE GEÇ
+          </div>
+        ) : (
+          <div className="modeText">
+            <span className="lang" onClick={handleLanguageChange}>
+              ENGLISH
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );

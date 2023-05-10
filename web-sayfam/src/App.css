@@ -16,8 +16,9 @@
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.1em;
-
+  cursor: pointer;
   color: #777777;
+  padding-right: 1rem;
 }
 #lang {
   color: #4731d3;
@@ -153,7 +154,7 @@
 
 .headerNav {
   display: flex;
-  gap: 7rem;
+  gap: 3rem;
 }
 .headerNav a {
   font-family: "Inter";
@@ -239,6 +240,7 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 2rem;
+  padding-top: 2rem;
   /* or 156% */
 
   /* Default/gray/500 */
@@ -546,7 +548,7 @@ a {
 
 .aciklama {
   width: 19rem;
-  height: 8rem;
+  height: 6rem;
 
   font-family: "Inter";
   font-style: normal;
@@ -781,4 +783,29 @@ body.dark-mode {
 }
 .projects.dark-mode .profileLine {
   border-top: 1px solid #6b7280;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .modeSwitch,
+  .header,
+  .headerNav,
+  .hero,
+  .buttons,
+  .skills,
+  .skillsList,
+  .profile,
+  .profileBox1,
+  .projects,
+  .projects-list,
+  .footer,
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+  }
 }

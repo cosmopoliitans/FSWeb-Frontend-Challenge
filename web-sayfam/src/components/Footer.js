@@ -1,13 +1,21 @@
 import React from "react";
 
-export default function Footer() {
+export default function Footer({ language }) {
   return (
     <div className="footer">
-      <h3 className="letsWork">
-        Let's team up and make your next
-        <br />
-        product a success.
-      </h3>
+      {language === "en" ? (
+        <h3 className="letsWork">
+          Let's team up and make your next
+          <br />
+          product a success.
+        </h3>
+      ) : (
+        <h3 className="letsWork">
+          Ekip olalım ve bir sonraki ürününüzü
+          <br />
+          başarıya ulaştıralım.
+        </h3>
+      )}
       <div className="rectangle">
         <a className="email" href="mailto:elfkyn52@gmail.com">
           <img src=".\icons\el.svg" alt="icon" />

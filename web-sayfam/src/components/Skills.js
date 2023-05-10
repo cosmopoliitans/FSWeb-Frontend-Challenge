@@ -33,12 +33,57 @@ const skillsData = [
   },
 ];
 
-export default function Skills() {
-  return (
+const trSkillsData = [
+  {
+    name: "Java Script",
+    description:
+      "Web geliştirme için yaygın olarak kullanılan çok yönlü bir programlama dili. Etkileşimli kullanıcı arayüzleri ve dinamik web siteleri oluşturmak için kullanılır.",
+  },
+  {
+    name: "React.Js",
+    description:
+      "Kullanıcı arabirimleri oluşturmak için kullanılan popüler bir JavaScript kitaplığı. Gerçek zamanlı olarak güncellenen verimli ve yeniden kullanılabilir bileşenlere izin verir.",
+  },
+  {
+    name: "Redux",
+    description:
+      "JavaScript uygulamaları için öngörülebilir bir durum kabı. Büyük ölçekli ve karmaşık projelerde uygulama durumunu yönetmek için kullanılır.",
+  },
+  {
+    name: "CSS",
+    description:
+      "Görsel olarak çekici ve duyarlı web siteleri oluşturmak için kullanılan bir stil dili. Sunum ve içeriğin ayrılmasını sağlar.",
+  },
+  {
+    name: "HTML",
+    description:
+      "Web sayfaları oluşturmak için kullanılan standart biçimlendirme dili. Bir web sayfasının yapısını ve içeriğini sağlar.",
+  },
+  {
+    name: "Python",
+    description:
+      "Web geliştirmeden veri analizine ve makine öğrenimine kadar çeşitli amaçlar için kullanılan üst düzey bir programlama dili.",
+  },
+];
+
+export default function Skills({ language }) {
+  return language === "en" ? (
     <div className="skills">
       <h3>Skills</h3>
       <div className="skillsList">
         {skillsData.map((skill) => (
+          <div className="skillsListGroup" key={skill.name}>
+            <h4>{skill.name}</h4>
+            <p>{skill.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  ) : (
+    <div className="skills">
+      <h3>Skills</h3>
+      <div className="skillsList">
+        {trSkillsData.map((skill) => (
           <div className="skillsListGroup" key={skill.name}>
             <h4>{skill.name}</h4>
             <p>{skill.description}</p>
