@@ -17,8 +17,8 @@ export default function ModeSwitch({ handleLanguageChange, language }) {
     lang.classList.toggle("dark-mode", darkMode);
     const emailcss = document.querySelector(".emailcss");
     emailcss.classList.toggle("dark-mode", darkMode);
-    // const sagF1 = document.querySelector(".sagF1");
-    // sagF1.classList.toggle("dark-mode", darkMode);
+    const techStack = document.querySelector(".techStack");
+    techStack.classList.toggle("dark-mode", darkMode);
     const logo = document.querySelector(".logo");
     logo.classList.toggle("dark-mode", darkMode);
     const isim = document.querySelector(".isim");
@@ -37,6 +37,7 @@ export default function ModeSwitch({ handleLanguageChange, language }) {
     profile.classList.toggle("dark-mode", darkMode);
     const projects = document.querySelector(".projects");
     projects.classList.toggle("dark-mode", darkMode);
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
   const handleToggle = () => {
