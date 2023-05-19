@@ -101,7 +101,7 @@ export default function Bio({ language }) {
         )}
       </div>
 
-      <img className="pPhoto" src=".\icons\image1.png" alt="icon" />
+      <img className="pPhoto" src=".\icons\elif.png" alt="icon" />
     </div>
   );
 }

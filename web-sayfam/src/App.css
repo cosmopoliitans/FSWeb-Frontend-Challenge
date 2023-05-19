@@ -4,7 +4,7 @@
   padding-top: 5rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 1400px;
 
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +127,7 @@
   padding-top: 3rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,9 +191,11 @@
   padding-top: 5rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 .heroLeft {
   display: flex;
@@ -312,10 +314,14 @@ a {
 }
 
 .pPhoto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
   margin: 0;
   padding: 0;
-  width: 476px;
-  height: 375px;
+  width: 400px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -325,7 +331,7 @@ a {
   padding-top: 6rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -388,7 +394,7 @@ a {
   padding-top: 6rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -509,7 +515,7 @@ a {
   padding-bottom: 6rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -633,7 +639,7 @@ a {
   padding-bottom: 6rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  max-width: 1860px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -801,6 +807,7 @@ body.dark-mode {
   body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -816,5 +823,6 @@ body.dark-mode {
   .rectangle {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
