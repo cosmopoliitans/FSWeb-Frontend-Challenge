@@ -40,11 +40,10 @@ export default function Profile({ language }) {
             <h4>About Me</h4>
             <p>
               I studied Industrial Design Engineering at Erciyes University.I
-              have developed myself in research, self-motivation,
+              had developed myself in research, self-motivation,
               entrepreneurship and acquiring different skills during my
-              education. That's why I think I will adapt easily to team. I
-              completed my internship in the department of automotive at
-              Teknokaucuk AS. I have been in Portugal for 6 months with Erasmus
+              education. That's why I think I will adapt easily to team.
+              I have been in Portugal for 6 months with Erasmus
               project. <br /> <br /> I have enrolled in a 6-month intensive and
               accelerated full stack web development online school with
               <span style={{ color: "#4731d3" }}> Workintech</span> , where I

@@ -7,7 +7,7 @@ const projectsData = [
       "A pizza ordering site that I made using routing, forms, cypress tests and css.",
     skills: ["JavaScript", "CSS", "Form"],
     gitHub: "https://github.com/cosmopoliitans/fsweb-s7-challenge-pizza",
-    vievSite: "https://vermillion-sundae-4c44a0.netlify.app/",
+    vievSite: "https://order-pizza-project.netlify.app/",
   },
   {
     img: "./icons/activity.png",
